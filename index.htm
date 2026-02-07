@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>E-Light IT solutions</title>
+</head>
+     <style>
+ body {
+      margin: 40px;
+      font-family: 'Segoe UI', Tahama, sans-serif;
+      background: linear-gradient(to top, grey, #2a5298);
+      display: grid;
+      height: 100%;
+      justify-content: center;
+      }
+      div1{
+          font-size: 2em;
+          padding-top:90px;
+          color: white;
+      }
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slider img {
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+/*menu bar style*/
+.menubar{
+    display: flex;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 100;
+}
+/*menu icon style*/
+.menuicon{
+    height: 40px;
+    cursor: pointer;
+}
+.menuicon:hover{
+    transform: scale(1.10);
+}
+
+/*search style*/
+.searchbar{
+    font-size: 1.6em;
+    overflow: hidden;
+    padding: 5px;
+    display: flex;
+    margin: 0 60px;
+    flex: 1;
+    border: 3px solid grey;
+    border-radius: 55px;
+}
+.searchbar:hover{
+        transform: scale(1.05);
+      }
+.searchicon{
+    cursor: pointer;
+    margin-right: 70px;
+    height: 40px;
+    background: grey;
+}
+.searchicon:hover{
+        background: white;
+        transform: scale(1.10);
+      }
+
+      /*sigh out style*/
+ .signin{
+    cursor: pointer;
+    background: skyblue;
+    border: none;
+    margin-right: 100px;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    font-family: verdana;
+    font-size: 1.3em;
+    }
+ .signin:hover{
+        background: grey;
+        transform: scale(1.10);
+      }
+
+.signin2:hover{
+        background: black;
+        color: white;
+        transform: scale(1.10);
+    }
+
+</style>
+
+
+<body>
+    <!--icons and search bar!-->
+    <div class="menubar" id="nemubar">
+      <code class="menuicon" id="menuicon" onclick="tooglemenu()">
+          <img src="menu icon.jpg" width="40" alt="menu icon here">
+      </code>
+      <input class="searchbar" id="searchbar" name="" type="text" placeholder="search our services here">
+      <code class="searchicon" id="searchicon">
+          <img src="search icon.png" width="40" alt="menu icon here">
+      </code>
+      <button class="signin" id="signin">sign in</button>
+    </div>
+         <br>
+         <!--welcome text!-->
+    <div1>
+        <p><i><b>Welcome to E-Light IT Solutions website where we handle different
+        Information Technology (IT) challenges.</p>
+    </div1>
+     <!--images!-->
+    <div class="slider">
+  <img src="elight logo.jpg" alt="Image 1">
+  <img src="online classes.jpeg" alt="Image 2">
+  <img src="tchild.jpg" alt="Image 3">
+  <img src="lecture.jpg" alt="Image 4">
+  </div>
+   <!--dropdown menu list!-->
+<div id="menudropdown" style=" display: none; position: fixed; top: 90px;
+ left: 0; background: #fff; font-size: 1.5em; padding: 30px; border: 3px solid grey;">
+    <ul>
+        <br>
+        <li id="ourservices" style=" cursor: pointer;">Our services</li> <br>
+        <li id="aboutus" style=" cursor: pointer;">About us</li> <br>
+        <li id="contactus" style=" cursor: pointer;">Contact us</li><br>
+        <li id="help" style=" cursor: pointer;">Help & others</li> <br>
+    </ul>
+    <br><br>
+    <code style="color: grey;"> &copy 2026 E-Light IT solutions</code>
+</div>
+<!--services text!-->
+<div style="color: white; font-size: 2.5em;">
+    <q>get help here</q>
+    <p>Our Services Department and Details</p
+</div>
+
+<div  style="color: black; font-size: 1.0em;">
+    <ol>
+        <li>Educating(instructing)</li>
+            <ul style="color: #333; font-family: Times New Roman;"><b>
+              we provide online and physical classes
+              <li>Microsoft packages e.g. word, excel, power point, access e.t.c</li>
+               <li>Graphics and designing</li>
+                <li>computer basics and skills</li>
+                 <li>cybersecurity</li>
+                  <li>computer programming</li>
+           </ul>
+        <li>Troubleshooting</li>
+                <ul style="color: #333; font-family: Times New Roman;"><b>
+              <li>Network installation and configuration</li>
+               <li>CCTV camera installation and configuration</li>
+               <li>computer hardware and software troubleshoot</li>
+               </ul>
+        <li>Guidance</li>
+               <ul style="color: #333; font-family: Times New Roman;">
+                   <li>online browsing safety</li>
+                   <li>IT careers</li>
+                   <li>security management</li>
+               </ul>
+        <li>Ground Service</li>
+               <ul style="color: #333; font-family: Times New Roman;">
+                   <li>selling computer related devices and parts</li>
+                   <li>build computer architecture for your needs e.g. gaming computers</li>
+                   <li>any IT services are offered with us</li>
+               </ul>
+    </ol>
+    <div style="color: #fff; font-family: verdana;">
+        <q>To get full access of our services please sign in using our services portal
+        by clicking sign in button bellow or use top right corner sign in button on
+        your window screen</q>
+    </div>
+         <br>
+</div>
+       <button id="signin2" class="signin2" style="cursor: pointer;
+    background: skyblue;
+    border: white solid;
+    border-radius: 10px;
+    width: 550px;
+    height: 150px;
+    margin-left:  290px;
+    font-size: 2em;
+    font-family: verdana;">
+           sign in
+       </button>
+
+
+          <script>
+       const signin = document.getElementById("signin");
+
+               signin.addEventListener('click',
+               function(event){
+               event.preventDefault();//prevent page from reload
+           window.location.href = "login page.htm";
+
+       });
+       function tooglemenu(){
+           const menu = document.getElementById('menudropdown');
+           menu.style.display = menu.style.display === "none" ? "block" : "none" ;
+
+       }
+                  //help link
+                  const help = document.getElementById("help");
+
+                help.addEventListener("click",
+                function(event){
+                    event.preventDefault();//prevent page from reload
+                    window.location.href = "mailto:elightitsolutions@gmail.com";
+                      })
+
+                    //contact us link
+                      const contactus= document.getElementById("contactus");
+
+                contactus.addEventListener("click",
+                function(event){
+                    event.preventDefault();//prevent page from reload
+                    window.location.href = "//wa.me/265897910448";
+
+                })
+                //about us link
+                  const aboutus = document.getElementById("aboutus");
+
+                aboutus.addEventListener("click",
+                function(event){
+                    event.preventDefault();//prevent page from reload
+                    window.location.href = "";
+
+                })
+                 //our services link
+                  const ourservices = document.getElementById("ourservices");
+
+                ourservices.addEventListener("click",
+                function(event){
+                    event.preventDefault();//prevent page from reload
+                    window.location.href = "";
+
+                })
+                //get services navigate page
+                  const signin2 = document.getElementById("signin2");
+
+                signin2.addEventListener("click",
+                function(event){
+                    event.preventDefault();//prevent page from reload
+                    window.location.href = "login page.htm";
+
+                })
+
+                  let images = document.querySelectorAll('.slider img');
+                  let index = 0;
+
+             setInterval(() => {
+                images.forEach(img => img.classList.remove('active'));
+                index = (index + 1) % images.length;
+                images[index].classList.add('active');
+                 }, 4000); // change image every 4 seconds
+</script>
+</body>
+
+</html>
